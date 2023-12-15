@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    border-radius: 7px;
+    display: flex;
+    border: solid black 1px;
+    height: 60vh;
+    width: 535px;
+    margin-top: 10%;
+    margin-left: 35%;
+}
+
+.left{
+    width: 267.5px;
+    flex-basis: 50%;
+}
+
+.right{
+    padding: 20px;
+    width: 267.5px;
+    flex-basis: 50%;
+}
+
+.perfume{
+    letter-spacing: 4px;
+    opacity: 50%;
+    font-size: small;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.heading{
+    margin-top: 1px;
+    margin-left: -180px ;
+    padding: 60px;
+}
+
+.desc{
+    margin-left: -2px;
+    margin-top: -15px;
+    opacity: 50%;
+    padding: 10px;
+}
+
+.cart{
+    margin-top: 30px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(38, 77, 63);
+    cursor: pointer;
+    height: 6vh;
+    width: 220px;
+    border: none;
+}
+
+.cart-icon{
+    margin-bottom: 100px;
+    border-radius: px;
+    color: white;
+    background-color: rgb(38, 77, 63);
+}
+
+.amount{
+    margin-top: -25px;
+    color: rgb(67, 124, 67);
+}
+
+.discount{opacity: 50%;
+    text-decoration: line-through;
+    margin-left: 60%;
+    margin-top: -13%;
+}

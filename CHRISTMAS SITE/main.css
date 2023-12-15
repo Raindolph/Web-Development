@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navigation{
+    border: none;
+    width: 100%;
+    height: 20vh;
+    position: fixed;
+    top: 0;
+    display: flex;
+    background-color: white;
+    z-index: 10;
+}
+
+.logo{
+    flex-basis: 40%;
+    border: none;
+    margin-left: 100px;
+    
+}
+
+.buttons{
+    flex-basis: 60%;
+    border:none;
+}
+
+ul{
+    list-style: none;
+}
+
+.list-nav{
+    display: inline-block;
+    padding: 5px;
+    font-weight: bold ;
+}
+
+.nav-buttons{
+    text-align: center;
+    margin-top:50px;
+}
+
+.links{
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    height: 4vh;
+}
+
+.slider{
+    border:none;
+    width: 100%;
+    height: 85vh;
+    margin-top: 8%;
+    background-image: url("./images/slider-01.jpg");
+    background-size: cover;
+}
+
+.best-wishes{
+    padding: 100px;
+    width: 100%;
+    display: flex;
+}
+
+.santa{
+    flex-basis: 50%;
+}
+
+.wishes{
+    margin-top: 8%;
+    flex-basis: 50%;
+}
+
+.harry{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:800;
+    font-size:55px;
+    margin-left: 15%;
+    margin-top: -75px;
+}
+
+.harry-wish{
+    text-decoration: none;
+    color: grey;
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: serif;
+    margin-top: 35px;
+}
+
+.read-more{
+    border:  solid red 1px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 7vh;
+    width: 180px;
+    text-decoration: none;
+    color: white;
+    background-color: red;
+}
+
+.links:hover{
+    background-color: red;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 5vh;
+    color: white;
+    transition: 500ms;
+}
+
+.john-wish{
+    padding: 100px;
+    display: flex;
+}
+
+.john{
+    flex-basis: 50%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:800;
+    font-size:35px;
+    margin-left: 35px;
+    margin-top: -15%;
+    width: 100%;
+}
+
+.john-max-wish{
+    flex-basis: 50%;
+    text-decoration: none;
+    color: grey;
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: serif;
+}
+
+.snow-man{
+    flex-basis: 50%;
+}

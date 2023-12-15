@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    font-family:'Lexend Deca', sans-serif;
+    display: flex;
+    border: solid black 1px;
+    height: 65vh;
+    width: 65%;
+    margin-left: 15%;
+    margin-top: 5%;
+    border-radius: 7px;
+}
+
+.sedan-img{
+    margin-top: 15px;
+}
+
+.sedans-head{
+    color: white;
+    font-family:'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.sedans{
+    flex-basis: 33%;
+    background-color: hsl(31, 77%, 52%);
+    padding: 30px;
+}
+.sedan-description{
+    color: white;
+    opacity: 50%;
+    font-size: 15px;
+    font-weight: 50;
+}
+
+.learn-more{
+    margin-top: 200px;
+    margin-left: 1%;
+    height: 6vh;
+    width: 140px;
+    margin-top: 30%;
+    border-radius: 20px;
+    color: hsl(31, 77%, 52%);
+    border: none;
+}
+
+.learn-more:hover{
+    color: white;
+    border: solid white 1px;
+    background-color: transparent;
+}
+
+.suvs-img{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.suvs-head{
+    color: white;
+    font-family:'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.suvs-description{
+    margin-top: 30px;
+    padding: 1px;
+    color: white;
+    opacity: 50%;
+    font-size: 15px;
+    font-weight: 50;
+}
+
+.SUVS{
+    flex-basis: 33%;
+    padding: 25px;
+    background-color: hsl(184, 100%, 22%);
+    padding: 30px;
+}
+
+.suvs-learn-more{
+    height: 6vh;
+    width: 140px;
+    margin-top: 75px;
+    margin-left: 1%;
+    border-radius: 20px;
+    border: none;
+    color: hsl(184, 100%, 22%);
+}
+
+.suvs-learn-more:hover{
+    color: white;
+    border: solid white 1px;
+    background-color: transparent;
+}
+
+.luxury{
+    flex-basis: 34%;
+    background-color: hsl(179, 100%, 13%);
+    padding: 30px;
+}
+
+.luxury-img{
+    margin-top: 15px;   
+    margin-bottom: 15px;
+}
+
+.luxury-head{
+    color: white;
+    font-family:'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+}
+.luxury-description{
+    margin-top: 25px;
+    padding: 1px;
+    color: white;
+    opacity: 50%;
+    font-size: 15px;
+    font-weight: 50;
+}
+
+.luxury-learn-more{
+    color: hsl(179, 100%, 13%);
+    height: 6vh;
+    width: 140px;
+    margin-top: 80px;
+    margin-left: 1%;
+    border-radius: 20px;
+    border: none;
+}
+
+.luxury-learn-more:hover{
+    color: white;
+    border: solid white 1px;
+    background-color: transparent;
+}

@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.first{
+    border: solid black 1px;
+    height: 30vh;
+    width: 36;
+    margin-left: 10px;
+    background-image: url(./bg-hero-mobile.svg);
+    background-repeat: no-repeat;
+}
+
+.img1{
+    margin-top: 30px;
+    margin-left: 150px;
+}
+
+.button{
+    margin-left: 250px;
+}
+
+button{
+    margin-top: 10px;
+}
+
+.second{
+    border: solid black 1px;
+    height: 40vh;
+}
+
+.third{
+    border: solid black 1px;
+    height: 30vh;
+}
