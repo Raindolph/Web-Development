@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <style>
+    /* Your styles here */
+  </style>
+</head>
+<body>
+  <a href="./cart.html">cart</a>
+  <header>
+    <h1>Simple Cart</h1>
+  </header>
+
+  <!-- Product 1 -->
+  <div class="product">
+    <h2>Product 1</h2>
+    <p>Description of Product 1.</p>
+    <p>Price: $19.99</p>
+    <button class="add-to-cart" onclick="addToCart('Product 1', 2.99)">Add to Cart</button>
+  </div>
+
+  <!-- Product 2 -->
+  <div class="product">
+    <h2>Product 2</h2>
+    <p>Description of Product 2.</p>
+    <p>Price: $24.99</p>
+    <button class="add-to-cart" onclick="addToCart('Product 2', 24.99)">Add to Cart</button>
+  </div>
+
+  <!-- Add more product sections as needed -->
+
+  <script>
+    function addToCart(productName, price) {
+      // Get the current cart items from localStorage or initialize an empty array
+      const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+      
+      // Add the product to the cart
+      const product = { productName, price };
+      cartItems.push(product);
+      
+      // Save the updated cart to localStorage
+      localStorage.setItem('cartItems', JSON.stringify(cartItems));
+      
+      // Post a message to notify other pages about the update
+      window.postMessage({ type: 'cartUpdate', data: cartItems }, '*');
+    }
+  </script>
+
+</body>
+</html>

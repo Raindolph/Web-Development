@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart Page</title>
+  <style>
+    /* Your styles here */
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Shopping Cart</h1>
+  </header>
+
+  <div id="cart-items">
+    <!-- Cart items will be displayed here -->
+  </div>
+
+  <script>
+    // Handle incoming messages to update the cart
+    window.addEventListener('message', (event) => {
+      if (event.data && event.data.type === 'cartUpdate') {
+        updateCart(event.data.data);
+      }
+    });
+
+    // Function to update the displayed cart
+    function updateCart(cartItems) {
+      const cartElement = document.getElementById('cart-items');
+      cartElement.innerHTML = ''; // Clear previous content
+
+      if (cartItems && cartItems.length > 0) {
+        cartItems.forEach((item) => {
+          const itemElement = document.createElement('div');
+          itemElement.textContent = `${item.productName} - $${item.price.toFixed(2)}`;
+          cartElement.appendChild(itemElement);
+        });
+      } else {
+        cartElement.textContent = 'Cart is empty';
+      }
+    }
+
+    // Load and display the initial cart state
+    const initialCartState = JSON.parse(localStorage.getItem('cartItems')) || [];
+    updateCart(initialCartState);
+  </script>
+
+</body>
+</html>

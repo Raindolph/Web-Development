@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    padding: 40px;
+    margin-left: 30%;
+    margin-top: 10%;
+    border: solid black 1px;
+    border-radius: 15px;
+    height: 40vh;
+    width: 10cm;
+}
+
+input{
+    height: 6vh;
+    width: 300px;
+    padding-left: 10px;
+    border-radius: 7px;
+    outline: none;
+    border: solid black 1px;
+}
+
+button{
+    border-radius: 7px;
+    height: 6vh;
+    width: 60px;
+    border: solid black 1px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+}
